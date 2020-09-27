@@ -2,5 +2,10 @@
 function Employee(name, id, email) {
     this.name = name;
     this.id = id;
-    this.email = email
+    this.email = email;
+    this.getRole= function(){
+        return "Employee";
+    }
 }
+
+module.exports = Employee
