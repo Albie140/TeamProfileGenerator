@@ -9,4 +9,6 @@ function Engineer(name, id, email, github) {
 }
 }
 
+const employee1 = new Engineer ("Alex", 1, "alex@email.com", "alex")
+
 module.exports = Engineer
