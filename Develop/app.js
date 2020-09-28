@@ -137,7 +137,7 @@ function makeEmployees() {
                 console.log("Success!")
             })
         }
-        // console.log(typeAnswers)
+        
 
 
 
