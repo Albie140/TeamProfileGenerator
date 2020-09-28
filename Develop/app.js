@@ -1,4 +1,3 @@
-console.log("Hello!")
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
@@ -15,6 +14,8 @@ const employees = [];
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
+
+//Created function for each class, then function to make Employees
 
 function makeManager() {
     inquirer.prompt([
@@ -104,8 +105,9 @@ function makeIntern() {
     })
 }
 
-
+//Called globally
 makeManager()
+
 function makeEmployees() {
     
     inquirer.prompt([
@@ -135,7 +137,7 @@ function makeEmployees() {
                 console.log("Success!")
             })
         }
-        console.log(typeAnswers)
+        // console.log(typeAnswers)
 
 
 
