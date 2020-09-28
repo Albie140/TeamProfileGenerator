@@ -13,9 +13,6 @@ getRole (){
 getGithub(){
     return this.github
 }
-
 }
-
-const employee1 = new Engineer ("Alex", 1, "alex@email.com", "alex")
 
 module.exports = Engineer

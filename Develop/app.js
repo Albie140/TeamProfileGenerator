@@ -110,18 +110,18 @@ function makeEmployees() {
     
     inquirer.prompt([
         {
-            type: "checkbox",
-            name: "Add members",
+            type: "list",
+            name: "choice",
             message: "Which type of team member would you like to add?",
             choices: ["Engineer", "Intern", "I don't want to add any more team members."]
         }
     ]).then(function (typeAnswers)
      {
-        if (typeAnswers === "Engineer") {
+        if (typeAnswers.choice === "Engineer") {
 
             makeEngineer()
         }
-        else if (typeAnswers === "Intern") {
+        else if (typeAnswers.choice === "Intern") {
 
             makeIntern()
         }
@@ -135,7 +135,7 @@ function makeEmployees() {
                 console.log("Success!")
             })
         }
-
+        console.log(typeAnswers)
 
 
 
